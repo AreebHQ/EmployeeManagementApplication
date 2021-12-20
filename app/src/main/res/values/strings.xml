@@ -1,0 +1,69 @@
+<resources>
+    <string name="app_name">AndroidFirebaseProject</string>
+    <string name="SignIn">Sign In</string>
+    <string name="SignUp">Sign Up</string>
+    <string name="welcomeMsg">Welcome! Nice to see you again</string>
+    <string name="Login">Login</string>
+    <string name="Register">Register</string>
+    <string name="Forgot">Forgot Password?</string>
+    <string name="Conformation">Conformation Code</string>
+    <string name="Email">Email</string>
+    <string name="Password">Password</string>
+    <string name="Other">Or use more methods</string>
+    <string name="FirstName">First Name</string>
+    <string name="LastName">Last Name</string>
+    <string name="Age">Age</string>
+    <string name="PhoneNumber">Phone Number</string>
+    <string name="EmailCon">Email verified!</string>
+    <string name="Logo">AppLogo</string>
+
+    <string name="PhoneNumberEx">(555)555-5555</string>
+    <string name="companyCode">Company Code</string>
+    <string name="name">Name</string>
+    <string name="ifStat">If user agrees to the Terms of Services and Privacy Policy</string>
+    <string name="_25">25</string>
+    <string name="please_verify_your_email">Please Verify Your Email!</string>
+    <string name="resend_code">Resend Code</string>
+    <string name="example_email_com">Example@email.com</string>
+    <string name="enter_email">Enter Email</string>
+    <string name="end_recovery_code">Recovery Code</string>
+    <string name="password_recovery">Password Recovery</string>
+    <string name="enter_new_password">New Password</string>
+    <string name="Confor">Confirm</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="employeeMsg"> Account setup link will be E-mailed! </string>
+    <string name="middle_name">Middle Name</string>
+    <string name="hire">Hire</string>
+    <string name="contact">Contact</string>
+    <string name="address">Address</string>
+    <string name="date_of_birth">Date of Birth</string>
+    <string name="employeeid">Employee Id</string>
+    <string name="position">Postion</string>
+    <string name="Continue">Continue</string>
+    <string name="hire_date">Hire Date</string>
+    <string name="pay_rate">Pay Rate</string>
+    <string name="_123_mary_lane">123 Mary Lane</string>
+    <string name="dob">DOB</string>
+    <string name="en_00000001">en_00000001</string>
+    <string name="ceo">Ceo</string>
+    <string name="_10_20_2021">10-10-2021</string>
+    <string name="payrateexample">30.5</string>
+    <string name="check_attendance">Check Attendance</string>
+    <string name="set_schedule">Set Schedule</string>
+    <string name="terminate">Terminate</string>
+
+
+    <string-array name="days_of_week">
+        <item>Sunday</item>
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+    </string-array>
+
+
+
+    <string name="QRWebLink"> <a href="https://www.the-qrcode-generator.com"> Sample QR Generation Website</a></string>
+</resources>

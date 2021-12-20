@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group
+        android:checkableBehavior="single">
+    <item android:id="@+id/navHome"
+        android:icon="@drawable/home"
+        android:title="Home" />
+
+    <item android:id="@+id/navProfile"
+        android:icon="@drawable/icon_attendance"
+        android:title="Profile" />
+
+    <item android:id="@+id/navEmployeeList"
+            android:icon="@drawable/legal"
+            android:title="Employees" />
+
+    <item android:id="@+id/navHire"
+        android:icon="@drawable/ic_baseline_person_add_24"
+        android:title="Hire" />
+
+    <item android:id="@+id/navTerminate"
+        android:icon="@drawable/legal"
+        android:title="Terminate" />
+
+    <item android:id="@+id/navReports"
+            android:icon="@drawable/ic_baseline_summarize_24"
+            android:title="Weekly Report" />
+
+    <item android:id="@+id/navManage"
+            android:icon="@drawable/ic_baseline_manage_accounts_24"
+            android:title="Manage" />
+
+
+    <item
+
+        android:title="" />
+
+    <item android:id="@+id/navSetting"
+        android:icon="@drawable/ic_baseline_settings_24"
+        android:title="Settings" />
+
+    <item android:id="@+id/navSignOut"
+        android:icon="@drawable/sign_out"
+        android:title="@string/sign_out" />
+    </group>
+</menu>

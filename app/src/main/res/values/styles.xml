@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="mystyle">
+        <item name="android:layout_width">162dp</item>
+        <item name="android:layout_height">146dp</item>
+        <item name="android:background">@color/OrangeSalmon</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:text"></item>
+
+    </style>
+
+
+
+
+
+
+
+</resources>

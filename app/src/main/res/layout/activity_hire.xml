@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Hire"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right">
+
+        <ImageView
+            android:id="@+id/iv_skip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="10dp"
+            app:srcCompat="@drawable/ic_keyboard_arrow_right_black_24dp" />
+
+        <TextView
+            android:id="@+id/tv_skip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/iv_skip"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="3dp"
+            android:layout_toStartOf="@+id/iv_skip"
+            android:text="Skip"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/HireTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:text="@string/hire"
+        android:textSize="34sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/addProfilePicture"
+        android:layout_width="139dp"
+        android:layout_height="128dp"
+        android:layout_gravity="center"
+        app:srcCompat="@drawable/ic_baseline_add_photo_alternate_24" />
+
+    <TableRow
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="31dp"
+            android:text="First Name"
+            android:textColor="@color/OrangeSalmon"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="124dp"
+            android:text="Last Name"
+            android:textColor="@color/OrangeSalmon"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+    </TableRow>
+
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/hire_firstName"
+            android:layout_width="146dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:hint="Enter Name"
+            android:inputType="text"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/hire_lastName"
+            android:layout_width="149dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:hint="Enter Name"
+            android:inputType="text"
+            android:textSize="14sp" />
+
+    </TableRow>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="0dp"
+        android:text="@string/address"
+        android:textColor="@color/OrangeSalmon"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        />
+
+    <EditText
+        android:id="@+id/hire_address"
+        android:layout_width="346dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="0dp"
+        android:hint="Enter Address"
+        android:inputType="text"
+        android:textSize="14sp" />
+
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="31dp"
+            android:text="Contact"
+            android:textColor="@color/OrangeSalmon"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="144dp"
+            android:text="Date of Birth"
+            android:textColor="@color/OrangeSalmon"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+    </TableRow>
+
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/hire_contact"
+            android:layout_width="146dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:hint="Contact"
+            android:inputType="phone"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/hire_DOB"
+            android:layout_width="149dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:hint="MM-DD-YYYY"
+            android:inputType="text"
+            android:textSize="14sp" />
+
+    </TableRow>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="0dp"
+        android:text="@string/Email"
+        android:textColor="@color/OrangeSalmon"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        />
+
+    <EditText
+        android:id="@+id/hire_employeeEmail"
+        android:layout_width="346dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:hint="Enter Email"
+        android:inputType="text"
+        android:textSize="14sp" />
+
+
+    <View
+        android:id="@+id/divider8"
+        android:layout_gravity="center"
+        android:layout_width="370dp"
+        android:layout_marginTop="5dp"
+        android:layout_height="20dp"
+        android:layout_marginBottom="5dp"
+        android:background="?android:attr/listDivider" />
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="31dp"
+            android:text="Employee ID"
+            android:textColor="@color/OrangeSalmon"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="116dp"
+            android:text="Pay Rate"
+            android:textColor="@color/OrangeSalmon"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+    </TableRow>
+
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+
+        <EditText
+            android:id="@+id/hire_employeeID"
+            android:layout_width="146dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="31dp"
+            android:hint="Enter Employee ID"
+            android:inputType="text"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/hire_payRate"
+            android:layout_width="149dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:hint="Enter Pay Rate"
+            android:inputType="phone"
+            android:textSize="14sp" />
+
+    </TableRow>
+
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="31dp"
+            android:text="Employee Position"
+            android:textColor="@color/OrangeSalmon"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="78dp"
+            android:text="Hire Date"
+            android:textColor="@color/OrangeSalmon"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+    </TableRow>
+
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+
+        <EditText
+            android:id="@+id/hire_employeePosition"
+            android:layout_width="146dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="31dp"
+            android:hint="Enter Position"
+            android:inputType="text"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/hire_employeeHireDate"
+            android:layout_width="149dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:hint="MM-DD-YYYY"
+            android:inputType="text"
+            android:textSize="14sp" />
+
+    </TableRow>
+
+    <Button
+        android:id="@+id/btn_continue"
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="68dp"
+        android:text="@string/Continue"
+        android:backgroundTint="@color/Orange"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_hireCompanyName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Company"
+        android:textStyle="bold" />
+</LinearLayout>

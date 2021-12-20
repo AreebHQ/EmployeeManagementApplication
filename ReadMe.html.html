@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+Employee Management Application [Android + Java + Firebase] </title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+*{
+padding-left: 20px;
+}
+
+.column {
+  float: left;
+  width: 18.33%;
+  padding: 5px;
+}
+@media screen and (max-width: 500px) {
+  .column {
+    width: 100%;
+  }
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.info {
+
+	font-family: "Courier New";
+	font-weight: bold;
+	padding: 20px;
+	
+}
+
+</style>
+</head>
+<body>
+<h1> Employee Management Application [Android + Java + Firebase]</h1>
+<p>
+<b> All content in this project is solely for learning purpose. :) </b>
+<br>
+<br>
+<div class="info"> <font color="#303030">
+<h2> <b>Introduction</b> </h2>
+<b> [Semester Project] </b> <br>
+An Android Application where the Owner [Manager , Administrator] can utilize all HR aspects like Hiring, Termination, Attendance , as well as calculate Payroll for employees. This application keeps record of attendance and time punches of employees, giving the manager a perfect picture of his expenses on a project or a store in terms of wages and labor. It will help the Manager keep track of his employee’s attendance, performance and time punches. 
+From the Employee side, it shows schedule, timecard, performance and paycheck amount for the week. Employee will also be able to check paycheck history to check the previous paycheck amounts. 
+All users can sign in using Password or Fingerprint method [FaceRecognication is under progress]. Employee will be able to use Fingerprints or QR code to enter time punch. 
+<br> <br>
+Backend created using Firebase services [Firebase Autehnticaiton, Firebase Firestore, Firebase Storage] <br>
+Calendar API Credit: [naishadhparmar]
+<br><br>
+<b> Stil in progress. . . </b></font></div> 
+</p>
+<br><br>
+<br><br>
+<h1>UI - Activities</h1>
+<p>Basic introduction of apllication activities:</p>
+<h2> SignIn  - ForgotPassword -  SignOut</h2>
+<div class="row">
+  <div class="column">
+    <img src="https://i.ibb.co/cTGsHgK/1.png" alt="SignIn" width="300" height="620">
+  </div>
+  <div class="column">
+    <img src="https://i.ibb.co/d65mxdX/3.png" alt="ForgotPassword" width="300" height="620">
+  </div>
+  <div class="column">
+    <img src="https://i.ibb.co/fvkstJd/2.png" alt="SignUp" width="300" height="620">
+  </div>
+</div>
+
+<p> 
+<b>Sign In</b> activity is the main activity, this is what a user will see when application start. Here user have option to sign in 
+using Email and Password, from second time login, user can use his fingerprints to sign in. To use this feature, user must have his
+ fingerprints set up in his device. New users can go to SignUp activity to create an <b>Employer account.</b> 
+In case of forgot password, user can click on the <b>ForgetPassword</b> option and a dialog box will appear to get user’s email and will send password reset link to the user. 
+</p>
+<br>
+<h2> Employer [Admin] Landing/Home Page</h2>
+ <img src="https://i.ibb.co/tp3hVgr/34.png" alt="SignUp" width="300" height="620">
+<p> Once the user <b>SignIn as Employer [Admin],</b> he will land on this activity which will act as Home page. From here user can navigate through icons to goto desired activity or can use Navigation Drawer</p>
+<br>
+<h2> Navigation Drawer [Employer]</h2>
+<div class="row">
+  <div class="column">
+    <img src="https://i.ibb.co/52RG93g/5.png" alt="SignIn" width="300" height="620">
+  </div>
+  <div class="column">
+    <img src="https://i.ibb.co/Kbq4qBQ/6.png" alt="ForgotPassword" width="300" height="620">
+  </div>
+</div>
+<p><b> Navigation Drawer</b> will display more activites to the user. Since the user is signed in as Emplyer, he will have access to "Emploer Only" activities. Once the user will select an activity
+ he will be moved there and that item/activity name on the Navigation Drawer will be hlighted. </p>
+ <br>
+ 
+<h2> User Profile [Employer/Employee] </h2>
+ <img src="https://i.ibb.co/ydtzGBk/7.png" alt="UserProfile" width="300" height="620">
+<p> Both users <b>Employee and Employer [Admin],</b> are able to see their information and can make edits to their profile data, including profile photo. </p>
+
+<br>
+<h2> Employees List and Attendance Performance</h2>
+<div class="row">
+  <div class="column">
+    <img src="https://i.ibb.co/yPjDKGs/8.png" alt="EmployeesList" width="300" height="620">
+  </div>
+  <div class="column">
+    <img src="https://i.ibb.co/BCnBCs6/23.png" alt="Attendance" width="300" height="620">
+  </div>
+</div>
+<h3> Employees List</h3>
+<p> Here the user who’s signed in as Employer, can see the list of employees who are working under his company’s name. By clicking on the name of employee, user will be taken to that employee’s performance activity where user can see employee’s attendance, workdays, off days etc. </p>
+<br>
+<h3> Attendance</h3>
+<p> 
+From attendance activity, user will be able to see his attendance progress. He will be able to see the monthly calander at the bottom of activity where the days he was present at work will be highlighted as Green. He can see the weekend days in orange shade and purple circle around today’s date. <br>
+At top, beside his profile image, first and last name and email, he will be able to see the percentage of his attendance, his actual attendance days and absent days in a month. <br>
+User can navigate through calendar to see his attendance details for other months as well.  <br>
+ </p>
+
+<h2> Employee Termination</h2>
+<div class="row">
+  <div class="column">
+    <img src="https://i.ibb.co/ZfkfBgf/9.png" alt="Terminate1" width="300" height="620">
+  </div>
+  <div class="column">
+    <img src="https://i.ibb.co/zG8tZD6/10.png" alt="Terminate2" width="300" height="620">
+  </div>
+</div>
+<p> From terminate activity, <b>Employer [Admin] user</b> can terminate an employee. User can select the employee that he wishes to terminate using the spinner list. Upon selecting the employee, his information will appear to the admin including employee’s first and last name, email and firebase identification number which is also the key for his table in Firebase Firestore database.
+</p>
+
+
+ 
+<h2> Payroll Report </h2>
+ <img src="https://i.ibb.co/QmZ9bVY/11.png" alt="PayrollReport" width="300" height="620">
+<p> Payroll report activity gives an overview to the admin user for his current week’s payroll. It will display the total cost of payroll in Amount dial, employees total regular hours in Regular dial and employees overtime hours in Overtime dial.  <br>
+In PayData section, user can see the total number of employees and if the payroll has been processed or not. User can also see the amount of last payroll processed.  <br>
+In PayHistory section, user will see the list of employees, there names and profile images along with their weekly pay check amount. It will give Managers/Admins to have an idea of there expenses. 
+Once user click the Process Payroll button, the payroll will be filed means, each employee’s paycheck information will be saved in each employee’s table and the total for the payroll will be saved in admins table in firebase.  
+</p>
+
+
+<h2> Employee Termination</h2>
+<div class="row">
+  <div class="column">
+    <img src="https://i.ibb.co/qJhc2V6/12.png" alt="Manage" width="300" height="620">
+  </div>
+  <div class="column">
+    <img src="https://i.ibb.co/bRSSjfG/15.png" alt="Profile" width="300" height="620">
+  </div>
+    <div class="column">
+    <img src="https://i.ibb.co/4RTKXxM/16.png" alt="UpdatePassword" width="300" height="620">
+  </div>
+</div>
+
+<h4> Manage Activity</h4>
+<p> 
+User will be shown four options in this activity. From here he can chose to set QR code for attendance method, edit employee’s time, edit his own profile and change his password
+</p>
+<h4> Edit Profile</h4>
+<p> 
+This option will take user to the Profile Activity where he can update his profile information. </p>
+<h4> Edit Password</h4>
+<p> 
+This option will take user to Update Password activity where user can change his password. 
+</p>
+
+
+
+
+<h2> Manage  -  Edit Time  -   QR CodeSetup</h2>
+<div class="row">
+  <div class="column">
+    <img src="https://i.ibb.co/qJhc2V6/12.png" alt="Manage" width="300" height="620">
+  </div>
+  <div class="column">
+    <img src="https://i.ibb.co/Dkj70L8/14.png" alt="SetTime" width="300" height="620">
+  </div>
+    <div class="column">
+    <img src="https://i.ibb.co/KmcngTF/13.png" alt="SetQRCode" width="300" height="620">
+  </div>
+</div>
+
+<h4> Edit Time </h4>
+<p> 
+Through EditTime Activity admin will be able to modify the time for an employee in case of missing time punch or a wrong time punch. First user will enter the date for that specific day and then select the employee from employee list spinner, once the user select it, the employee’s time punches will appear on screen, is there is a missing time much, the time will say “Missing” else will show the clockin or clock out time. <br>
+If admin is checking the time punch for the same employee selected in spinner, then he has to change date and click Check button and it will refresh the time punches for that specific date. <br>
+User can edit the time using Set Change button. User will use edit text option and set the AM/PM shift using the shift switches. There are some basic instructions mentioned on the activity for user.  <br>
+</p>
+<h4> QR Code Setup</h4>
+<p> 
+Using QRCodeSetup Activity, user can set the QR attendance for this employees where the user have to generate a QR Code with text value and then he will enter the text value in the QR Value option and set date to set up that QR value for specific day and press Continue to set it. Once the employee scan the QR Code provided by the admin on that specific day, app will get the value returned by QR Code and match it with the value in admins profile setup for that day, if the values matches, it will mark the employee attendance. <br>
+Some basic instructions are given for admin users and a sample QR code generator website has been provided as well.  <br>
+
+ </p>
+
+
+
+<h2> Employee Landing  -  Navigation Drawer</h2>
+<div class="row">
+  <div class="column">
+    <img src="https://i.ibb.co/P6qKgRG/35.png" alt="EmployeeHome" width="300" height="620">
+  </div>
+  <div class="column">
+    <img src="https://i.ibb.co/wJ0j9R5/19.png" alt="NavigationDrawer" width="300" height="620">
+  </div>
+    <div class="column">
+    <img src="https://i.ibb.co/tYTXYdV/20.png" alt="NavigationDrawer" width="300" height="620">
+  </div>
+</div>
+
+<h4> Employee Landing Activity</h4>
+<p> 
+
+Once a user signs in as Employee, it will land on this page. Same as the employer, the employee has access to a specific navigation drawer to navigate through the app. Currently Active activity will be highlighted in navigation drawer. <br>
+</p>
+
+
+<h2> Pay Profile </h2>
+ <img src="https://i.ibb.co/7r1nKL2/21.png" alt="PayProfile" width="300" height="620">
+<p> <b>Navigation Drawer -> PayData</b> <br><br> Through PayProfile Activity, user can see his wage profile where in PayData section, he will be able to see his Basic Pay Rate, Overtime Rate and Pay Date. He will be able to see current week’s hours including regular and overtime hours, current paycheck in the three red dials at the top.  In PayHistory section, he will be able to see his previous paycheck with week numbers and the amount. User can navigate through Next and Previous buttons to see the details of his paychecks. </p>
+
+
+
+<h2> Clock In-Out</h2>
+<div class="row">
+  <div class="column">
+    <img src="https://i.ibb.co/1LRT3jq/25.png" alt="ClockInOut1" width="300" height="620">
+  </div>
+  <div class="column">
+    <img src="https://i.ibb.co/4RrBGmW/24.png" alt="ClockInOut2" width="300" height="620">
+  </div>
+</div>
+
+<h4> Employee Clock In-Out</h4>
+<p> 
+
+Through this activity user will clock-in and out and mark his attendance. As soon as user press the Start button, his shift will start, and time will clock ticking. User will be able to see his work time at the top right corner inside a red dial. Even if user leave the activity or close the app, as soon as he will come back to this activity, time will set up automatically and will show him the actual time he has worked. To clock out, user will have to press and hold the Stop button for few seconds to stop the timer and enter his time out punch.  <br>
+There are other methods of clocking in provided for user’s convenience and Employer’s demand like by using Fingerprint and QR Code by clicking on their icons. <br>
+Calendar at the bottom will show the days employee has worked during a month. <br> <br>
+<b>Not Functional Features</b><br>
+Facial Recognition attendance and break time is not functional. <br>
+</p>
+
+
+
+
+<h2> QRCode Scanner Activity </h2>
+<div class="row">
+  <div class="column">
+    <img src="https://i.ibb.co/SyDgPw4/27.png" alt="QRDisplayOne" width="300" height="620">
+  </div>
+  <div class="column">
+    <img src="https://i.ibb.co/NjtqrTd/28.png" alt="QRDisplayTwo" width="300" height="620">
+  </div>
+   <div class="column">
+    <img src="https://i.ibb.co/ckjKWBc/30.png" alt="QRDisplayThree" width="300" height="620">
+  </div>
+</div>
+
+<h4> QR Scanning</h4>
+<p> 
+
+If user wants to clock in using QR code provided by the employer, he need to click the scan button and camera will turn on, he will scan the QRCode and his attendance will be marked and he will be directed to the Clock In-Out page. <br><br>
+Using QR Code method, employee can only clock in, for clock out he can use either Fingerprint method or button method. 
+
+</p>
+
+
+
+
+<h2> FingerPrint Attendance Activity </h2>
+<div class="row">
+  <div class="column">
+    <img src="https://i.ibb.co/zFPDMyV/29.png" alt="FRDisplayOne" width="300" height="620">
+  </div>
+  <div class="column">
+    <img src="https://i.ibb.co/PDn4DkM/26.png" alt="FRDisplayTwo" width="300" height="620">
+  </div>
+   <div class="column">
+    <img src="https://i.ibb.co/XWNsJyK/33.png" alt="FRDisplayThree" width="300" height="620">
+  </div>
+</div>
+
+<h4> Fingerprint Attendance </h4>
+<p> 
+
+Through out the attendance activities, user will be able to see if he’s already clocked in or not, if he has been clocked in using any of the method, he wont be able to clock in again. <br>
+User can clock in and out only once a day, in case if he clocked out by mistake, he wont be able to clock in or out again for the rest of the day. If he tries, it will give him an error that clock <b>“punches has been recorded, please contact your administrator”.</b> He will have to contact his supervisor or manager who has access to admin account to edit his time punches. 
+
+</p>
+
+
+
+
+<h2> Settings </h2>
+ <img src="https://i.ibb.co/VSZv6nr/31.png" alt="Settings" width="300" height="620">
+<p> Through this activity user can edit profile or change password. </p> <br>
+
+
+
+<h2> Terminated Employee Landing </h2>
+ <img src="https://i.ibb.co/61NnjBQ/32.png" alt="TerminatedLanding" width="300" height="620">
+<p> When a terminated employee will sign in, he will see this activity and will be singed out after 5 seconds. He wont have any access to other features of the application.  </p> <br>
+
+<h3> <b> Still in progress. . . </b></h3>
+
+
+</body>
+</html>
+
+
