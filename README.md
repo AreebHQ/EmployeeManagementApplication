@@ -27,13 +27,7 @@ Calendar API Credit: [naishadhparmar]
 <h2> SignIn  - ForgotPassword -  SignOut</h2>
 <div class="row">
   <div class="column">
-    <img src="https://i.ibb.co/cTGsHgK/1.png" alt="SignIn" width="300" height="620">
-  </div>
-  <div class="column">
-    <img src="https://i.ibb.co/d65mxdX/3.png" alt="ForgotPassword" width="300" height="620" >
-  </div>
-  <div class="column">
-    <img src="https://i.ibb.co/fvkstJd/2.png" alt="SignUp" width="300" height="620">
+    <img src="https://i.ibb.co/8rCYFQr/1.png" alt="SignIn" width="900" height="620">
   </div>
 </div>
 <p style="clear: both;">
@@ -51,10 +45,7 @@ In case of forgot password, user can click on the <b>ForgetPassword</b> option a
 <h2> Navigation Drawer [Employer]</h2>
 <div class="row">
   <div class="column">
-    <img src="https://i.ibb.co/52RG93g/5.png" alt="SignIn" width="300" height="620">
-  </div>
-  <div class="column">
-    <img src="https://i.ibb.co/Kbq4qBQ/6.png" alt="ForgotPassword" width="300" height="620">
+    <img src="https://i.ibb.co/g3w1qHH/5-Copy.png" alt="SignIn" width="600" height="620">
   </div>
 </div>
 <p><b> Navigation Drawer</b> will display more activites to the user. Since the user is signed in as Emplyer, he will have access to "Emploer Only" activities. Once the user will select an activity
@@ -69,10 +60,7 @@ In case of forgot password, user can click on the <b>ForgetPassword</b> option a
 <h2> Employees List and Attendance Performance</h2>
 <div class="row">
   <div class="column">
-    <img src="https://i.ibb.co/yPjDKGs/8.png" alt="EmployeesList" width="300" height="620">
-  </div>
-  <div class="column">
-    <img src="https://i.ibb.co/BCnBCs6/23.png" alt="Attendance" width="300" height="620">
+    <img src="https://i.ibb.co/26r9hMz/8-Copy.png" alt="EmployeesList" width="600" height="620">
   </div>
 </div>
 <h3> Employees List</h3>
@@ -88,10 +76,7 @@ User can navigate through calendar to see his attendance details for other month
 <h2> Employee Termination</h2>
 <div class="row">
   <div class="column">
-    <img src="https://i.ibb.co/ZfkfBgf/9.png" alt="Terminate1" width="300" height="620">
-  </div>
-  <div class="column">
-    <img src="https://i.ibb.co/zG8tZD6/10.png" alt="Terminate2" width="300" height="620">
+    <img src="https://i.ibb.co/LC5R7tg/9-Copy.png" alt="Terminate1" width="600" height="620">
   </div>
 </div>
 <p> From terminate activity, <b>Employer [Admin] user</b> can terminate an employee. User can select the employee that he wishes to terminate using the spinner list. Upon selecting the employee, his information will appear to the admin including employee’s first and last name, email and firebase identification number which is also the key for his table in Firebase Firestore database.
@@ -108,16 +93,10 @@ Once user click the Process Payroll button, the payroll will be filed means, eac
 </p>
 
 
-<h2> Employee Termination</h2>
+<h2> Manage - Update Profile - Update Password</h2>
 <div class="row">
   <div class="column">
-    <img src="https://i.ibb.co/qJhc2V6/12.png" alt="Manage" width="300" height="620">
-  </div>
-  <div class="column">
-    <img src="https://i.ibb.co/bRSSjfG/15.png" alt="Profile" width="300" height="620">
-  </div>
-    <div class="column">
-    <img src="https://i.ibb.co/4RTKXxM/16.png" alt="UpdatePassword" width="300" height="620">
+    <img src="https://i.ibb.co/6HQkJX2/12-Copy.png" alt="Manage" width="900" height="620">
   </div>
 </div>
 
@@ -139,13 +118,7 @@ This option will take user to Update Password activity where user can change his
 <h2> Manage  -  Edit Time  -   QR CodeSetup</h2>
 <div class="row">
   <div class="column">
-    <img src="https://i.ibb.co/qJhc2V6/12.png" alt="Manage" width="300" height="620">
-  </div>
-  <div class="column">
-    <img src="https://i.ibb.co/Dkj70L8/14.png" alt="SetTime" width="300" height="620">
-  </div>
-    <div class="column">
-    <img src="https://i.ibb.co/KmcngTF/13.png" alt="SetQRCode" width="300" height="620">
+    <img src="https://i.ibb.co/R238Fbg/12-Copy-2.png" alt="Manage" width="900" height="620">
   </div>
 </div>
 
@@ -167,13 +140,7 @@ Some basic instructions are given for admin users and a sample QR code generator
 <h2> Employee Landing  -  Navigation Drawer</h2>
 <div class="row">
   <div class="column">
-    <img src="https://i.ibb.co/P6qKgRG/35.png" alt="EmployeeHome" width="300" height="620">
-  </div>
-  <div class="column">
-    <img src="https://i.ibb.co/wJ0j9R5/19.png" alt="NavigationDrawer" width="300" height="620">
-  </div>
-    <div class="column">
-    <img src="https://i.ibb.co/tYTXYdV/20.png" alt="NavigationDrawer" width="300" height="620">
+    <img src="https://i.ibb.co/RYksPv8/18-Copy.png" alt="EmployeeHome" width="900" height="620">
   </div>
 </div>
 
@@ -193,10 +160,7 @@ Once a user signs in as Employee, it will land on this page. Same as the employe
 <h2> Clock In-Out</h2>
 <div class="row">
   <div class="column">
-    <img src="https://i.ibb.co/1LRT3jq/25.png" alt="ClockInOut1" width="300" height="620">
-  </div>
-  <div class="column">
-    <img src="https://i.ibb.co/4RrBGmW/24.png" alt="ClockInOut2" width="300" height="620">
+    <img src="https://i.ibb.co/T0rXNqC/25-Copy.png" alt="ClockInOut1" width="600" height="620">
   </div>
 </div>
 
@@ -216,13 +180,7 @@ Facial Recognition attendance and break time is not functional. <br>
 <h2> QRCode Scanner Activity </h2>
 <div class="row">
   <div class="column">
-    <img src="https://i.ibb.co/SyDgPw4/27.png" alt="QRDisplayOne" width="300" height="620">
-  </div>
-  <div class="column">
-    <img src="https://i.ibb.co/NjtqrTd/28.png" alt="QRDisplayTwo" width="300" height="620">
-  </div>
-   <div class="column">
-    <img src="https://i.ibb.co/ckjKWBc/30.png" alt="QRDisplayThree" width="300" height="620">
+    <img src="https://i.ibb.co/XjmRbjD/27-Copy.png" alt="QRDisplayOne" width="900" height="620">
   </div>
 </div>
 
@@ -240,13 +198,7 @@ Using QR Code method, employee can only clock in, for clock out he can use eithe
 <h2> FingerPrint Attendance Activity </h2>
 <div class="row">
   <div class="column">
-    <img src="https://i.ibb.co/zFPDMyV/29.png" alt="FRDisplayOne" width="300" height="620">
-  </div>
-  <div class="column">
-    <img src="https://i.ibb.co/PDn4DkM/26.png" alt="FRDisplayTwo" width="300" height="620">
-  </div>
-   <div class="column">
-    <img src="https://i.ibb.co/XWNsJyK/33.png" alt="FRDisplayThree" width="300" height="620">
+    <img src="https://i.ibb.co/mRMW1wL/26-Copy.png" alt="FRDisplayOne" width="900" height="620">
   </div>
 </div>
 
